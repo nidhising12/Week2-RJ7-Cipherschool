@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>This is a demo page!</h1>
+    <button onclick="onbuttonClick()">Click Me!</button>
+    <script>
+        function onbuttonClick(e) {
+        let h1Element = document.getElementsByTagName('h1')[0];
+        h1Element.innerText = "This is cipher schools";
+        } 
+    </script>
+    --> 
+    <h1>This is a demo page</h1>
+    <div style="height: 500px; border: 2px solid black">
+    <button>click Me!</button>
+    </div>
+    <script>
+        document.querySelector("#myDiv").addEventListener("click", function (e) {
+            console.log("Div was clicked!");
+        });
+    
+            document.querySelector('button').addEventListener("click", function (e) {
+              e.stopPropagation()
+                console.log("Button was clicked!");
+               document.getElementsByTagName("hi")[0].innerText = 
+            "This is cipher schools";
+            });
+           document.body.addEventListener("click", function (e) {
+            console.log("Body was clicked");
+           });
+        </script>  
+        
+
+
+</body>
+</html>
